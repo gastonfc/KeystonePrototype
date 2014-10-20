@@ -12,6 +12,10 @@
 					</h5>
 				</header>
 				<div class="post">
+                    Gallery: {{data.post.gallery.name}}
+                    {{#with data.post.gallery}}
+                      {{>gallery}}
+                    {{/with}}
 					{{{data.post.content.extended}}}
 				</div>
 			</article>
